@@ -1,0 +1,22 @@
+Question 1
+
+A short is a number that is  16 bits long. An int is a number  either 16
+ bits or 32 bits long. Both floats and doubles are floating point numbers,
+ meaning that they have numbers after the decimal. The float is 32 bits and the double is 64
+bits.The short and int are both whole number values, while the float and
+double are both rational numbers with decimals. Min and max for short are
+-32768 and 32767. Min and max for int are -2147483648 and 2147483647. Min
+and max for double are 1.7976931348623158e+308 and
+2.2250738585072014e-308. Min and max for float are 3.402823466e+38 and
+1.175494351e-38.
+
+Question 2
+
+The reusult of y is 3.0000. Because it is a float and it gets rounded down.
+
+Question 3
+
+int i has a a value of 0 because it is not changed.
+int j is 0 because it is not changed.
+int x is i incremented by one which is 1.
+int y is j incremented by one which is 1. 
