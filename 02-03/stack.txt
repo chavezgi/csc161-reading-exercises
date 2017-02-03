@@ -1,0 +1,47 @@
+Exercise 02-03                                                   Giani Chavez 
+--------------
+void foo(void) {
+int x = 5;
+/* Point A */
+foo();
+printf("%d\n", x);
+}
+int main(void) {
+foo();
+return 0;
+}
+
+Program Counter:6
+The Stack
+=========
+--- main
+(empty)
+
+Program Counter: 2
+The Stack
+=========
+--- foo
+(empty)
+
+--- main
+(empty)
+
+Program Counter: 3
+The Stack
+=========
+--- foo
+x [5]
+
+--- main
+(empty)
+
+The program starts at line 6 in the main function, which is empty until
+the function foo gets called, then the program goes to line 2 the beginning
+of the function foo. Then the statement x = 5 is made setting the value of
+5 to the variable x. At Point A, where we are told to give the state of
+computation, the x is given the value of 5 in the scope of the function
+foo, while we still have the main function with empty values. At line 4
+the function foo would get called again, taking us back to line 2, and 3
+resetting the value of x to 5, and it would keep on looping through the
+function foo and never quit. So the final stack written above will continue
+to occur, never making it to the actaul print statement on line 5.  
